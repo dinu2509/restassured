@@ -26,7 +26,7 @@ public class restassured {
 		
 	}
 
-	@Test(enabled = false,dataProvider="testdata1")
+	@Test(enabled = true,dataProvider="testdata1")
 	public void createuser(String uname,String fname,String lname,String email,String password,String phone,String userStatus)
 	{
 		RestAssured.baseURI="https://petstore.swagger.io/v2";
